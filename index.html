@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manager Library — Gestión para bibliotecas pequeñas</title>
+  <meta name="description" content="Manager Library es un sistema para que una biblioteca pequeña lleve su catálogo de libros, sus socios y sus préstamos, y vea qué libros se prestan más.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" id="top">Manager Library</a>
+      <nav aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#about">Qué es</a></li>
+          <li><a href="#actors">Quién lo usa</a></li>
+          <li><a href="#features">Funciones</a></li>
+          <li><a href="#rules">Reglas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <h1>Tu biblioteca, en orden</h1>
+        <p class="lead">Un sistema para que una biblioteca pequeña lleve su catálogo de libros, sus socios y sus préstamos, y vea qué libros se prestan más.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Qué es Manager Library</h2>
+        <p>Manager Library reúne en un solo lugar el catálogo, los socios y los préstamos de la biblioteca, y permite consultar el reporte de los libros más prestados.</p>
+      </div>
+    </section>
+
+    <section id="actors" class="section section-alt" aria-labelledby="actors-title">
+      <div class="container">
+        <h2 id="actors-title">Quién lo usa</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <h3>Administrador</h3>
+            <p>Mantiene el catálogo de libros y los socios, da de alta bibliotecarios y ve todos los reportes.</p>
+          </li>
+          <li class="card">
+            <h3>Bibliotecario</h3>
+            <p>Registra préstamos y devoluciones, y consulta el catálogo, los socios y los libros vencidos.</p>
+          </li>
+          <li class="card">
+            <h3>Socio</h3>
+            <p>Es la persona que pide libros prestados. No entra al sistema: es un dato, no un usuario.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Funciones</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <h3>Catálogo de libros</h3>
+            <p>Libros con portada opcional, organizados en cinco categorías fijas.</p>
+            <ul class="tag-list" aria-label="Categorías">
+              <li>Novela</li>
+              <li>Ciencia</li>
+              <li>Tecnología</li>
+              <li>Historia</li>
+              <li>Infantil</li>
+            </ul>
+          </li>
+          <li class="card">
+            <h3>Socios</h3>
+            <p>Registro de las personas que piden libros prestados.</p>
+          </li>
+          <li class="card">
+            <h3>Préstamos</h3>
+            <p>Un préstamo puede incluir varias líneas, una por cada libro.</p>
+          </li>
+          <li class="card">
+            <h3>Devolución por línea</h3>
+            <p>Cada libro se devuelve de forma individual, línea por línea.</p>
+          </li>
+          <li class="card">
+            <h3>Libros vencidos</h3>
+            <p>Consulta de los libros que no se devolvieron a tiempo.</p>
+          </li>
+          <li class="card">
+            <h3>Más prestados</h3>
+            <p>Reporte de los libros que más se prestan.</p>
+          </li>
+          <li class="card">
+            <h3>Inicio de sesión con roles</h3>
+            <p>Cada usuario opera según su rol: administrador o bibliotecario.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="rules" class="section section-alt" aria-labelledby="rules-title">
+      <div class="container">
+        <h2 id="rules-title">Reglas clave</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <p class="figure" aria-hidden="true">14</p>
+            <h3>Plazo de 14 días</h3>
+            <p>Todo préstamo vence 14 días después de registrarse.</p>
+          </li>
+          <li class="card">
+            <p class="figure" aria-hidden="true">3</p>
+            <h3>Hasta 3 libros sin devolver</h3>
+            <p>Un socio no puede tener más de 3 libros sin devolver en total.</p>
+          </li>
+          <li class="card">
+            <p class="figure" aria-hidden="true">!</p>
+            <h3>Sin vencidos para pedir</h3>
+            <p>Un socio con libros vencidos no puede pedir otro hasta devolverlos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Manager Library</p>
+    </div>
+  </footer>
+</body>
+</html>
